@@ -48,17 +48,20 @@
 }
 
 .flip .card .back img {
-    width: 370px;
-    height: 100%;
-  }
+  width: 370px;
+  height: 100%;
+}
 .inner {
   margin: 0px !important;
   width: 270px;
 }
 
-
 @media screen AND (max-width: 500px) {
-    .flip .card {
-        min-height: 750px;
-    }
+  .flip .card .back img {
+    width: 300px;
+    height: 100%;
+  }
+  .flip .card {
+    min-height: 750px;
+  }
 }
