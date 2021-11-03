@@ -1,472 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="./style.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Feria virtual</title>
-  </head>
-  <body>
-    <!-- navegacion -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            width="60"
-            class=""
-            src="./src/imgs/logo-virtual-marketing.png"
-          />
-        </a>
+  <link rel="stylesheet" href="./style.css" />
 
-        <!-- burger button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- menu inicio -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-            </li>
-            <!-- menu sobre nosotros -->
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="/sobre-nosotros.html"
-                >¿Quiénes somos?</a
-              >
-            </li>
-            <!-- menu stands -->
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/stands.html"
-                >Stands</a
-              >
-            </li>
-            <!-- menu el poder del conocimiento -->
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/poder-conocimiento.html"
-                >El poder del conocimiento</a
-              >
-            </li>
-            <!-- menu contactanos -->
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/contactanos.html"
-                >Contactanos</a
-              >
-            </li>
-          </ul>
+  <title>Feria virtual</title>
+</head>
 
-          <div class="d-flex gap-4 justify-content-end text-white col-md-3">
-            <a style="text-decoration: none; color: white" href=""
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a style="text-decoration: none; color: white" href=""
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a style="text-decoration: none; color: white" href=""
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a style="text-decoration: none; color: white" href=""
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </div>
+<body>
+  <!-- navegacion -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img width="60" class="" src="./src/imgs/logo-virtual-marketing.png" />
+      </a>
+
+      <!-- burger button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- menu inicio -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          </li>
+          <!-- menu sobre nosotros -->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/sobre-nosotros.html">¿Quiénes somos?</a>
+          </li>
+          <!-- menu stands -->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/stands.html">Stands</a>
+          </li>
+          </li>
+          <!-- menu el poder del conocimiento -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              El poder del conocimiento
+            </a>
+            <ol class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/promocion-ventas.html">1. Promoción de ventas</a></li>
+              <li><a class="dropdown-item" href="/ventas.html">2. Ventas</a></li>
+            </ol>
+          </li>
+          <!-- menu contactanos -->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/contactanos.html">Contactanos</a>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-4 justify-content-end text-white col-md-3">
+          <a style="text-decoration: none; color: white" href=""><i class="fab fa-facebook"></i></a>
+          <a style="text-decoration: none; color: white" href=""><i class="fab fa-instagram"></i></a>
+          <a style="text-decoration: none; color: white" href=""><i class="fab fa-linkedin"></i></a>
+          <a style="text-decoration: none; color: white" href=""><i class="fab fa-twitter"></i></a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- carrusel -->
-    <section class="section" id="banners">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <!-- slide boton 1 -->
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <!-- slide boton 2 -->
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <!-- slide boton 3 -->
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <!-- slide boton 4 -->
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <!-- slide 1 -->
-          <div
-            class="carousel-item active"
-            style="height: 90vh; background-color: #05d2df"
-          >
-            <div class="d-flex justify-content-center" style="height: 100%">
-              <div
-                class="w-50 d-flex justify-content-center align-items-center"
-              >
-                <img
-                  width="350"
-                  src="./src/imgs/logo-virtual-marketing.png"
-                  alt=""
-                />
-              </div>
-              <div
-                class="
+  <!-- carrusel -->
+  <section class="section" id="banners">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <!-- slide boton 1 -->
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <!-- slide boton 2 -->
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <!-- slide boton 3 -->
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <!-- slide boton 4 -->
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- slide 1 -->
+        <div class="carousel-item active" style="height: 90vh; background-color: #05d2df">
+          <div class="d-flex justify-content-center" style="height: 100%">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+              <img width="350" src="./src/imgs/logo-virtual-marketing.png" alt="" />
+            </div>
+            <div class="
                   w-50
                   d-none d-md-flex
                   justify-content-center
                   align-items-center
                   px-5
-                "
-              >
-                <div class="d-none d-md-block">
-                  <h1
-                    class="text-white"
-                    style="
+                ">
+              <div class="d-none d-md-block">
+                <h1 class="text-white" style="
                       font-size: 5rem;
                       line-height: 4.5rem;
                       font-weight: bold;
                       text-align: center;
                       text-transform: uppercase;
                       text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
-                    "
-                  >
-                    El espacio<br />
-                    <span style="color: #ff2e71"
-                      >ideal para exhibir <br
-                    /></span>
-                    tu negocio
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- slide 2 -->
-          <div
-            class="carousel-item"
-            style="height: 90vh; background-color: #fdd515"
-          >
-            <div
-              class="d-flex justify-content-center align-items-center"
-              style="height: 100%"
-            >
-              <div
-                class="w-100 d-flex justify-content-center align-items-center"
-              >
-                <img
-                  height="400"
-                  src="./src/imgs/carrusel/slide 2.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="carousel-caption d-none d-md-block text-dark">
-                <h1 class="display-5">
-                  Promociona y vende tus productos y servicios
+                    ">
+                  El espacio<br />
+                  <span style="color: #ff2e71">ideal para exhibir <br /></span>
+                  tu negocio
                 </h1>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- slide 3 -->
-          <div
-            class="carousel-item text-white"
-            style="height: 90vh; background-color: #ff2e71"
-          >
-            <div class="d-flex justify-content-center" style="height: 100%">
-              <div
-                class="w-50 d-flex justify-content-center align-items-center"
-              >
-                <img width="350" src="./src/imgs/carrusel/slide 3.png" alt="" />
-              </div>
+        <!-- slide 2 -->
+        <div class="carousel-item" style="height: 90vh; background-color: #fdd515">
+          <div class="d-flex justify-content-center align-items-center" style="height: 100%">
+            <div class="w-100 d-flex justify-content-center align-items-center">
+              <img height="400" src="./src/imgs/carrusel/slide 2.png" alt="" />
+            </div>
 
-              <div
-                class="
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h1 class="display-5">
+                Promociona y vende tus productos y servicios
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- slide 3 -->
+        <div class="carousel-item text-white" style="height: 90vh; background-color: #ff2e71">
+          <div class="d-flex justify-content-center" style="height: 100%">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+              <img width="350" src="./src/imgs/carrusel/slide 3.png" alt="" />
+            </div>
+
+            <div class="
                   w-50
                   d-none d-md-flex
                   justify-content-center
                   align-items-center
                   px-5
-                "
-              >
-                <h1 class="display-5">
-                  Promociona y vende tus productos y servicios
-                </h1>
-              </div>
+                ">
+              <h1 class="display-5">
+                Promociona y vende tus productos y servicios
+              </h1>
             </div>
           </div>
+        </div>
 
-          <!-- slide 4 -->
-          <div
-            class="carousel-item"
-            style="height: 90vh; background-color: #012b5d"
-          >
-            <div class="d-flex justify-content-center" style="height: 100%">
-              <div
-                class="
+        <!-- slide 4 -->
+        <div class="carousel-item" style="height: 90vh; background-color: #012b5d">
+          <div class="d-flex justify-content-center" style="height: 100%">
+            <div class="
                   w-100
                   d-flex
                   justify-content-center
                   align-items-center
                   mb-5
-                "
-              >
-                <img
-                  height="300"
-                  src="./src/imgs/carrusel/slide 4.png"
-                  alt=""
-                />
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="display-5">La Matías Making Marketing</h2>
-                <p>La mejor manera de aprender es ayudando a otros</p>
-              </div>
+                ">
+              <img height="300" src="./src/imgs/carrusel/slide 4.png" alt="" />
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-5">La Matías Making Marketing</h2>
+              <p>La mejor manera de aprender es ayudando a otros</p>
             </div>
           </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-
-    <!-- fin de carrusel -->
-
-    <!-- seccion de stands -->
-    <section
-      class="container-fluid py-5 section"
-      style="background-color: whitesmoke"
-    >
-      <h2 class="display-4 text-center py-5">
-        Nuestros stands <i class="fas fa-store"></i>
-      </h2>
-
-      <div class="row justify-content-around">
-        <!-- productos -->
-        <div class="row col-12 col-md-5 mx-3 p-3 shadow bg-light">
-          <h5 class="display-6">Productos</h5>
-
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-
-          <a
-            href="#"
-            class="btn btn-lg px-4 gap-3"
-            style="background-color: #fdd515"
-          >
-            Ver más productos <i class="fas fa-search"></i>
-          </a>
-        </div>
-
-        <!-- servicios -->
-        <div class="row col-12 col-md-5 mx-3 p-3 shadow bg-light">
-          <h5 class="display-6">Servicios</h5>
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-
-          <!-- stand 1 -->
-          <div class="col-md-4 col-6">
-            <div class="card mb-4 border-0">
-              <!-- imagen 100 x 225 -->
-              <div
-                class="shadow-sm border-0"
-                style="width: 100%; height: 150px; background-color: white"
-              ></div>
-            </div>
-          </div>
-          <a
-            href="#"
-            class="btn btn-lg px-4 gap-3"
-            style="background-color: #fdd515"
-          >
-            Ver más servicios <i class="fas fa-search"></i>
-          </a>
         </div>
       </div>
-    </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
-    <!-- seccion informativa -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#f5f5f5"
-        fill-opacity="1"
-        d="M0,224L26.7,202.7C53.3,181,107,139,160,117.3C213.3,96,267,96,320,133.3C373.3,171,427,245,480,272C533.3,299,587,277,640,256C693.3,235,747,213,800,186.7C853.3,160,907,128,960,133.3C1013.3,139,1067,181,1120,165.3C1173.3,149,1227,75,1280,64C1333.3,53,1387,107,1413,133.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
-      ></path>
-    </svg>
-    <div
-      class="
+  <!-- fin de carrusel -->
+
+  <!-- seccion de stands -->
+  <section class="container-fluid py-5 section" style="background-color: whitesmoke">
+    <h2 class="display-4 text-center py-5">
+      Nuestros stands <i class="fas fa-store"></i>
+    </h2>
+
+    <div class="row justify-content-around">
+      <!-- productos -->
+      <div class="row col-12 col-md-5 mx-3 p-3 shadow bg-light">
+        <h5 class="display-6">Productos</h5>
+
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-lg px-4 gap-3" style="background-color: #fdd515">
+          Ver más productos <i class="fas fa-search"></i>
+        </a>
+      </div>
+
+      <!-- servicios -->
+      <div class="row col-12 col-md-5 mx-3 p-3 shadow bg-light">
+        <h5 class="display-6">Servicios</h5>
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+
+        <!-- stand 1 -->
+        <div class="col-md-4 col-6">
+          <div class="card mb-4 border-0">
+            <!-- imagen 100 x 225 -->
+            <div class="shadow-sm border-0" style="width: 100%; height: 150px; background-color: white"></div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-lg px-4 gap-3" style="background-color: #fdd515">
+          Ver más servicios <i class="fas fa-search"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion informativa -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#f5f5f5" fill-opacity="1"
+      d="M0,224L26.7,202.7C53.3,181,107,139,160,117.3C213.3,96,267,96,320,133.3C373.3,171,427,245,480,272C533.3,299,587,277,640,256C693.3,235,747,213,800,186.7C853.3,160,907,128,960,133.3C1013.3,139,1067,181,1120,165.3C1173.3,149,1227,75,1280,64C1333.3,53,1387,107,1413,133.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+    </path>
+  </svg>
+  <div class="
         px-4
         pt-2
         text-center
@@ -475,121 +323,89 @@
         justify-content-around
         align-items-center
         mb-5
-      "
-    >
-      <div>
-        <h1 class="display-5 fw-bold">
-          ¡Participa y gana! <i class="fas fa-gift"></i>
-        </h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">
-            Llena la encuesta y participa en el giveaway habran muchos premios y
-            sorpresas
-          </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a
-              href="#"
-              class="btn btn-lg px-4 gap-3"
-              style="background-color: #05d2df"
-            >
-              Participar ahora <i class="fas fa-mouse-pointer"></i>
-            </a>
-          </div>
+      ">
+    <div>
+      <h1 class="display-5 fw-bold">
+        ¡Participa y gana! <i class="fas fa-gift"></i>
+      </h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Llena la encuesta y participa en el giveaway habran muchos premios y
+          sorpresas
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="#" class="btn btn-lg px-4 gap-3" style="background-color: #05d2df">
+            Participar ahora <i class="fas fa-mouse-pointer"></i>
+          </a>
         </div>
       </div>
-      <lottie-player
-        class="d-none d-md-block"
-        src="https://assets7.lottiefiles.com/packages/lf20_wsywufs8.json"
-        background="transparent"
-        speed="1"
-        style="width: 300px; height: 300px"
-        loop
-        autoplay
-      ></lottie-player>
     </div>
+    <lottie-player class="d-none d-md-block" src="https://assets7.lottiefiles.com/packages/lf20_wsywufs8.json"
+      background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></lottie-player>
+  </div>
 
-    <!-- footer -->
-    <div style="height: 150px; overflow: hidden">
-      <svg
-        viewBox="0 0 500 150"
-        preserveAspectRatio="none"
-        style="height: 100%; width: 100%"
-      >
-        <path
-          d="M-11.57,67.59 C122.17,249.17 349.20,-49.98 520.03,131.73 L500.00,150.00 L0.00,150.00 Z"
-          style="stroke: none; fill: #212529"
-        ></path>
-      </svg>
-    </div>
-    <div class="bg-dark">
-      <footer
-        class="
+  <!-- footer -->
+  <div style="height: 150px; overflow: hidden">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+      <path d="M-11.57,67.59 C122.17,249.17 349.20,-49.98 520.03,131.73 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: #212529"></path>
+    </svg>
+  </div>
+  <div class="bg-dark">
+    <footer class="
           d-flex
           flex-wrap
           justify-content-between
           align-items-center
           py-3
           container
-        "
-      >
-        <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="/"
-            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-          >
-          </a>
-          <span class="text-light">© 2021 UJMD - Making Marketing</span>
-        </div>
+        ">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        </a>
+        <span class="text-light">© 2021 UJMD - Making Marketing</span>
+      </div>
 
-        <div class="d-flex gap-3 justify-content-end text-white">
-          <a style="text-decoration: none; color: white" href=""
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a style="text-decoration: none; color: white" href=""
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a style="text-decoration: none; color: white" href=""
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a style="text-decoration: none; color: white" href=""
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </div>
-      </footer>
-    </div>
+      <div class="d-flex gap-3 justify-content-end text-white">
+        <a style="text-decoration: none; color: white" href=""><i class="fab fa-facebook"></i></a>
+        <a style="text-decoration: none; color: white" href=""><i class="fab fa-instagram"></i></a>
+        <a style="text-decoration: none; color: white" href=""><i class="fab fa-linkedin"></i></a>
+        <a style="text-decoration: none; color: white" href=""><i class="fab fa-twitter"></i></a>
+      </div>
+    </footer>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script>
-      var header = document.getElementById("banners");
-      function fadeOutOnScroll(element) {
-        if (!element) {
-          return;
-        }
-        var distanceToTop =
-          window.pageYOffset + element.getBoundingClientRect().top;
-        var elementHeight = element.offsetHeight;
-        var scrollTop = document.documentElement.scrollTop;
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script>
+    var header = document.getElementById("banners");
+    function fadeOutOnScroll(element) {
+      if (!element) {
+        return;
+      }
+      var distanceToTop =
+        window.pageYOffset + element.getBoundingClientRect().top;
+      var elementHeight = element.offsetHeight;
+      var scrollTop = document.documentElement.scrollTop;
 
-        var opacity = 1;
+      var opacity = 1;
 
-        if (scrollTop > distanceToTop) {
-          opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
-        }
-
-        if (opacity >= 0) {
-          element.style.opacity = opacity;
-        }
+      if (scrollTop > distanceToTop) {
+        opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
       }
 
-      function scrollHandler() {
-        fadeOutOnScroll(header);
+      if (opacity >= 0) {
+        element.style.opacity = opacity;
       }
-      window.addEventListener("scroll", scrollHandler);
-    </script>
-  </body>
+    }
+
+    function scrollHandler() {
+      fadeOutOnScroll(header);
+    }
+    window.addEventListener("scroll", scrollHandler);
+  </script>
+</body>
+
 </html>
