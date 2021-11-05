@@ -94,27 +94,38 @@
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <!-- tab de productos -->
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="productos-tab" data-bs-toggle="tab" data-bs-target="#productos"
-          type="button" role="tab" aria-controls="productos" aria-selected="false">
+        <button class="nav-link active btn-tabs-control" id="productos-tab" data-bs-toggle="tab"
+          data-bs-target="#productos" type="button" role="tab" aria-controls="productos" aria-selected="false">
           Productos
         </button>
       </li>
 
       <!-- tab de servicios -->
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="servicios-tab" data-bs-toggle="tab" data-bs-target="#servicios" type="button"
-          role="tab" aria-controls="servicios" aria-selected="false">
+        <button class="nav-link btn-tabs-control" id="servicios-tab" data-bs-toggle="tab" data-bs-target="#servicios"
+          type="button" role="tab" aria-controls="servicios" aria-selected="false">
           Servicios
         </button>
       </li>
     </ul>
     <div class="tab-content my-3" id="myTabContent">
+
       <!-- lista de productos -->
       <div class="tab-pane fade show active" id="productos" role="tabpanel" aria-labelledby="productos-tab">
+
+        <!-- lista de categorias -->
+        <section class="pb-3">
+          <button class="my-1 cat-all badge rounded-pill py-2 border-0 bg-primary">Todas las categorías</button>
+          <button class="my-1 cat-prod-ropa badge rounded-pill py-2 border-0 bg-success">Ropa y accesorios</button>
+          <button class="my-1 cat-prod-salud badge rounded-pill py-2 border-0 bg-info">Salud y Belleza</button>
+          <button class="my-1 cat-prod-restaurantes badge rounded-pill py-2 border-0 bg-danger">Restaurantes y
+            bocadillos</button>
+        </section>
+
         <div class="row g-2">
 
           <!-- 1. Pupuseria Las Chedraui -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-restaurantes">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -122,7 +133,11 @@
                   width=" 70" class="rounded-circle" />
               </div>
               <h5 class="mb-0">Pupuseria Las Chedraui</h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-danger w-75 mx-auto">
+                <small>
+                  Restaurantes y bocadillos
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalPupuseriaChedraui">
@@ -134,7 +149,7 @@
           </div>
 
           <!-- 2. KACHELA -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-ropa">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -142,7 +157,11 @@
                   width="70" class="rounded-circle" />
               </div>
               <h5 class="mb-0">Káchela</h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-success w-75 mx-auto">
+                <small>
+                  Ropa y accesorios
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalKachela">
@@ -153,7 +172,7 @@
           </div>
 
           <!-- 3. Cleantech -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -161,7 +180,11 @@
                   width="70" class="rounded-circle" />
               </div>
               <h5 class="mb-0">Cleantech </h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-info w-75 mx-auto">
+                <small>
+                  Salud y belleza
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalCleantech">
@@ -171,16 +194,20 @@
             </div>
           </div>
 
-          <!-- 4. Bloom boda Mist -->
-          <div class="col-md-3">
+          <!-- 4. Bloom body Mist -->
+          <div class="col-md-3 cat-card group-prod-salud">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
                   src="https://res.cloudinary.com/dfrcck8j7/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1636092045/making-marketing/PRODUCTOS/BLOOM/logo_rosado_bloom_ydljzq.png"
                   width="70" class="rounded-circle" />
               </div>
-              <h5 class="mb-0">Bloom boda Mist</h5>
-              <small>Productos</small>
+              <h5 class="mb-0">Bloom body Mist</h5>
+              <div class="badge rounded-pill bg-info w-75 mx-auto">
+                <small>
+                  Salud y belleza
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalBloom">
@@ -191,7 +218,7 @@
           </div>
 
           <!-- 5. Alubias -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-ropa">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -199,7 +226,11 @@
                   width="70" class="rounded-circle" />
               </div>
               <h5 class="mb-0">Alubias</h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-success w-75 mx-auto">
+                <small>
+                  Ropa y accesorios
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalAlubias">
@@ -210,7 +241,7 @@
           </div>
 
           <!-- 6. Umbrella skin care -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-salud">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -218,7 +249,11 @@
                   width="70" class="rounded-circle" />
               </div>
               <h5 class="mb-0">Umbrella skin care</h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-info w-75 mx-auto">
+                <small>
+                  Salud y belleza
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalUmbrellaSkinCare">
@@ -229,7 +264,7 @@
           </div>
 
           <!-- 7. Boocu Shop  -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-ropa">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -237,7 +272,11 @@
                   width="70" class="rounded-circle" />
               </div>
               <h5 class="mb-0">Boocu Shop</h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-success w-75 mx-auto">
+                <small>
+                  Ropa y accesorios
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalBoocuShop">
@@ -248,7 +287,7 @@
           </div>
 
           <!-- 8. Quelquechose -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-ropa">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -256,7 +295,11 @@
                   width="70" class="rounded-circle" />
               </div>
               <h5 class="mb-0">Quelquechose</h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-success w-75 mx-auto">
+                <small>
+                  Ropa y accesorios
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalQuelquechose">
@@ -267,7 +310,7 @@
           </div>
 
           <!-- 9. CC's sweet -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-restaurantes">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -276,7 +319,11 @@
               </div>
               <h5 class="mb-0">CC's sweet
               </h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-danger w-75 mx-auto">
+                <small>
+                  Restaurantes y bocadillos
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalCcSweet">
@@ -287,7 +334,7 @@
           </div>
 
           <!-- 10. Karamello -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-restaurantes">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -296,7 +343,11 @@
               </div>
               <h5 class="mb-0">Karamello
               </h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-danger w-75 mx-auto">
+                <small>
+                  Restaurantes y bocadillos
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalKaramello">
@@ -307,7 +358,7 @@
           </div>
 
           <!-- 11. Parricheros -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-restaurantes">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -316,7 +367,11 @@
               </div>
               <h5 class="mb-0">Parricheros
               </h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-danger w-75 mx-auto">
+                <small>
+                  Restaurantes y bocadillos
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalParricheros">
@@ -327,7 +382,7 @@
           </div>
 
           <!-- 12. Shainy Store -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-ropa">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -336,7 +391,11 @@
               </div>
               <h5 class="mb-0">Shainy Store
               </h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-success w-75 mx-auto">
+                <small>
+                  Ropa y accesorios
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalShainyStore">
@@ -347,7 +406,7 @@
           </div>
 
           <!-- 13. Sweet Bee -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-prod-restaurantes">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -356,7 +415,11 @@
               </div>
               <h5 class="mb-0">Sweet Bee
               </h5>
-              <small>Productos</small>
+              <div class="badge rounded-pill bg-danger w-75 mx-auto">
+                <small>
+                  Restaurantes y bocadillos
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalSweetBee">
@@ -373,10 +436,20 @@
 
       <!-- lista de servicios -->
       <div class="tab-pane fade" id="servicios" role="tabpanel" aria-labelledby="servicios-tab">
+
+        <!-- lista de categorias -->
+        <section class="pb-3 my-1">
+          <button class="my-1 cat-all badge rounded-pill py-2 border-0 bg-primary">Todas las categorías</button>
+          <button class="cat-serv-shopping badge rounded-pill py-2 border-0 bg-success">Compras en
+            línea</button>
+          <button class="my-1 cat-serv-impresion badge rounded-pill py-2 border-0 bg-warning text-dark">Servicio de
+            impresión</button>
+        </section>
+
         <div class="row g-2">
 
           <!-- 1. Malala Salón -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-serv-shopping">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -385,7 +458,11 @@
               </div>
               <h5 class="mb-0">Malala Salón
               </h5>
-              <small>Servicios</small>
+              <div class="badge rounded-pill bg-success w-75 mx-auto">
+                <small>
+                  Compras en línea
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalMalalasSalon">
@@ -396,7 +473,7 @@
           </div>
 
           <!-- 2. Panda Print -->
-          <div class="col-md-3">
+          <div class="col-md-3 cat-card group-serv-impresion">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
                 <img
@@ -405,7 +482,11 @@
               </div>
               <h5 class="mb-0">Panda Print
               </h5>
-              <small>Servicios</small>
+              <div class="badge rounded-pill bg-warning text-dark w-75 mx-auto">
+                <small>
+                  Servicios de impresión
+                </small>
+              </div>
               <div class="mt-4 d-flex justify-content-around">
                 <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
                   data-bs-target="#modalPandaPrint">
@@ -440,10 +521,7 @@
                   ingredientes de la cocina libanesa y tradicional y salir de la zona de confort con nuevos sabores. Su
                   especialidad son: pupusas y la chedraui, con sabores picantes.</p>
               </div>
-              <!-- cupon -->
-              <div class="coupon">
-                CODIGO-CUPON
-              </div>
+
               <a target="_blank" href="https://www.facebook.com/Pupusas-By-Chedraui-100945755338886/"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-facebook"></i>
@@ -471,10 +549,7 @@
                 <p>Tienda en línea de ropa, zapatos y accesorios para mujeres. Hacen entregas en centros comerciales de
                   Santa Tecla y Antiguo Cuscatlan.</p>
               </div>
-              <!-- cupon -->
-              <div class="coupon">
-                CODIGO-CUPON
-              </div>
+
               <a target="_blank" href="https://instagram.com/kachelasv?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -504,8 +579,10 @@
               </div>
               <!-- cupon -->
               <div class="coupon">
-                CODIGO-CUPON
+                VMF2021CLEANTECH
               </div>
+              <small class="text-muted mb-3 px-2">50% de descuento por la compra desde 1 kit, incluye envió a
+                domicilio</small>
               <a target="_blank" href="https://instagram.com/cleantechsv?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -517,7 +594,7 @@
     </div>
   </div>
 
-  <!-- 4. modal Bloom boda Mist -->
+  <!-- 4. modal Bloom body Mist -->
   <div class="modal fade" id="modalBloom" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -529,13 +606,9 @@
             </div>
             <div class="d-flex justify-content-center align-items-center flex-column">
               <div class="text-center">
-                <h3>Bloom Boda Mist</h3>
+                <h3>Bloom body Mist</h3>
                 <p>Es una marca de splash importada de los Estados Unidos, son fragancias originales y replicas triple A
                   de fragancias famosas.</p>
-              </div>
-              <!-- cupon -->
-              <div class="coupon">
-                CODIGO-CUPON
               </div>
               <a target="_blank" href="https://instagram.com/bloom_perfumes_sv?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
@@ -563,10 +636,6 @@
                 <h3>Alubias</h3>
                 <p>Alubias es una tienda en línea que vende accesorios y ropa nueva de marca, prendas únicas.</p>
               </div>
-              <!-- cupon -->
-              <div class="coupon">
-                CODIGO-CUPON
-              </div>
               <a target="_blank" href="https://instagram.com/alubiashop?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -591,14 +660,10 @@
             <div class="d-flex justify-content-center align-items-center flex-column">
               <div class="text-center">
                 <h3>Umbrella skin care</h3>
-                <p>UmbrellaSkin , es una tienda para el cuidado de la cara , para todo tipo de piel ,con productos
+                <p>UmbrellaSkin , es una tienda para el cuidado de la cara, para todo tipo de piel ,con productos
                   exclusivos que te ayudan a tener una piel libre de grasa, libre de resequedad, y muchos beneficios
                   mas.
                 </p>
-              </div>
-              <!-- cupon -->
-              <div class="coupon">
-                CODIGO-CUPON
               </div>
               <a target="_blank" href="https://instagram.com/umbrellaskin?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
@@ -629,8 +694,9 @@
               </div>
               <!-- cupon -->
               <div class="coupon">
-                CODIGO-CUPON
+                VMF2021BOOCU
               </div>
+              <small class="text-muted mb-3 px-2">10% de descuento en todos los artículos</small>
               <a target="_blank" href="https://instagram.com/boocu_shop?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -660,8 +726,10 @@
               </div>
               <!-- cupon -->
               <div class="coupon">
-                CODIGO-CUPON
+                VMF2021QUELQUECHOSE
               </div>
+              <small class="text-muted mb-3 px-2">20% de descuento en cadena de acero inoxidable plateada o
+                negra</small>
               <a target="_blank" href="https://instagram.com/quelquechose_sv?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -690,8 +758,10 @@
               </div>
               <!-- cupon -->
               <div class="coupon">
-                CODIGO-CUPON
+                VMF2021CCSSWEET
               </div>
+              <small class="text-muted mb-3 px-2">Menú especial: Candy Box y las gomitas picantes al mismo precio que
+                las clásicas</small>
               <a target="_blank" href="https://instagram.com/ccsweet_sv?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -720,8 +790,11 @@
               </div>
               <!-- cupon -->
               <div class="coupon">
-                CODIGO-CUPON
+                VMF2021KARAMELO
               </div>
+              <small class="text-muted mb-3 px-2 text-center">Menú especial: Cajita 4 brownies, cajita 4 galletas y mix
+                2 galletas y
+                2 brownies</small>
               <a target="_blank" href="https://instagram.com/karamello.sv?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -750,8 +823,11 @@
               </div>
               <!-- cupon -->
               <div class="coupon">
-                CODIGO-CUPON
+                VMF2021PARRICHEROS
               </div>
+              <small class="text-muted mb-3 px-2">Producto especial: Tacos de Puyazo
+                Promociones:
+                Orden de tacos + 1 taco gratis + CocaCola</small>
               <a target="_blank" href="https://instagram.com/parricheros?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -781,8 +857,9 @@
               </div>
               <!-- cupon -->
               <div class="coupon">
-                CODIGO-CUPON
+                VMF2021SHAINY
               </div>
+              <small class="text-muted mb-3 px-2">10% de descuento en todos los artículos</small>
               <a target="_blank" href="https://instagram.com/shainystore?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -809,10 +886,6 @@
                 <h3>Sweet Bee</h3>
                 <p>¡Los mejores detalles en chocolate que hacen especial cualquier día!, Sweet Bee es un emprendimiento
                   que ofrece diversos dulces y postres para endulzar los días de sus clientes</p>
-              </div>
-              <!-- cupon -->
-              <div class="coupon">
-                CODIGO-CUPON
               </div>
               <a target="_blank" href="https://www.instagram.com/sweetbee_sv/?hl=es" class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -843,8 +916,9 @@
               </div>
               <!-- cupon -->
               <div class="coupon">
-                CODIGO-CUPON
-              </div>
+                VMF2021MALALA </div>
+              <small class="text-muted mb-3 px-2">20% Todos los kits</small>
+
               <a target="_blank" href="https://instagram.com/malalahaircaresv?utm_medium=copy_link"
                 class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -872,10 +946,6 @@
                 <p>Panda Print es una empresa dedicada a la impresión de todo tipo de material publicitario, desde la
                   producción de impresiones de gran escala y venta en mayoreo hasta impresiones por unidad y productos
                   personalizados.</p>
-              </div>
-              <!-- cupon -->
-              <div class="coupon">
-                CODIGO-CUPON
               </div>
               <a target="_blank" href="https://www.instagram.com/pandaprint.sv/?hl=es-la" class="btn py-1 btn-primary">
                 Visitar tienda <i class="fab fa-instagram"></i>
@@ -923,6 +993,46 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      var activeCat = "";
+      function filterGroup(group) {
+        if (activeCat != group) {
+          console.log("." + group)
+          $(".cat-card").filter("." + group).show();
+          $(".cat-card").filter(":not(." + group + ")").hide();
+          activeCat = group;
+        }
+      }
+
+      $(".btn-tabs-control").each((index, el) => {
+        $(el).click((e) => {
+          $(".cat-card").show();
+          activeCat = "all";
+        });
+      });
+
+      $(".cat-all").click(function () {
+        $(".cat-card").show();
+        activeCat = "all";
+      });
+
+
+      //productos
+      $(".cat-prod-ropa").click(function () { filterGroup("group-prod-ropa"); });
+      $(".cat-prod-salud").click(function () { filterGroup("group-prod-salud"); });
+      $(".cat-prod-restaurantes").click(function () { filterGroup("group-prod-restaurantes"); });
+
+      //servicios
+      $(".cat-serv-impresion").click(function () { filterGroup("group-serv-impresion"); });
+      $(".cat-serv-shopping").click(function () { filterGroup("group-serv-shopping"); });
+
+    });
+  </script>
 </body>
 
 </html>

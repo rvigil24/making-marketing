@@ -129,8 +129,8 @@
   background-color: #fff;
   border: 2px dashed #6c757d;
   margin: 0 auto;
-  margin-bottom: 20px;
-  width: 50%;
+  margin-bottom: 10px;
+  width: 75%;
 }
 .modal .cancel {
   color: gray;
