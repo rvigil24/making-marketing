@@ -16,7 +16,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Feria virtual</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 
 <body style="background-color: whitesmoke">
   <!-- navegacion -->
@@ -46,18 +48,18 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/stands.html">Stands</a>
           </li>
-        </li>
-        <!-- menu el poder del conocimiento -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            El poder del conocimiento
-          </a>
-          <ol class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/promocion-ventas.html">1. Promoción de ventas</a></li>
-            <li><a class="dropdown-item" href="/ventas.html">2. Ventas</a></li>
-          </ol>
-        </li>
+          </li>
+          <!-- menu el poder del conocimiento -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              El poder del conocimiento
+            </a>
+            <ol class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/promocion-ventas.html">1. Promoción de ventas</a></li>
+              <li><a class="dropdown-item" href="/ventas.html">2. Ventas</a></li>
+            </ol>
+          </li>
           <!-- menu contactanos -->
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/contactanos.html">Contactanos</a>
@@ -68,7 +70,8 @@
         <div class="d-flex gap-4 justify-content-end text-white col-md-3">
           <a style="text-decoration: none; color: white"
             href="https://www.facebook.com/Virtual-Marketing-Fair-105130808634835/"><i class="fab fa-facebook"></i></a>
-          <a style="text-decoration: none; color: white" href="https://www.instagram.com/mmklamatias/"><i class="fab fa-instagram"></i></a>
+          <a style="text-decoration: none; color: white" href="https://www.instagram.com/mmklamatias/"><i
+              class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -111,33 +114,36 @@
       <!-- lista de productos -->
       <div class="tab-pane fade show active" id="productos" role="tabpanel" aria-labelledby="productos-tab">
         <div class="row g-2">
-          <!-- producto 1 -->
+
+          <!-- 1. Pupuseria Las Chedraui -->
           <div class="col-md-3">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
-                <img src="https://i.pravatar.cc/69" width="70" class="rounded-circle" />
+                <img
+                  src="https://res.cloudinary.com/dfrcck8j7/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1636092047/making-marketing/PRODUCTOS/PUPUSERIA%20CHEDRAUI/logo_ghixqw.png"
+                  width=" 70" class="rounded-circle" />
               </div>
-              <h5 class="mb-0">Empresa 1</h5>
+              <h5 class="mb-0">Pupuseria Las Chedraui</h5>
               <small>Productos</small>
               <div class="mt-4 d-flex justify-content-around">
-                <button class="btn btn-outline-dark text-uppercase">
+                <button type="button" class="btn btn-outline-dark text-uppercase w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalPupuseriaChedraui">
                   Ver más <i class="fas fa-search"></i>
                 </button>
-                <a href="https://google.com" target="_blank" class="btn text-uppercase text-white"
-                  style="background-color: #012b5d">
-                  Facebook <i class="fab fa-facebook"></i>
-                </a>
               </div>
             </div>
+
           </div>
 
-          <!-- producto 1 -->
+          <!-- 2. KACHELA -->
           <div class="col-md-3">
             <div class="card p-2 py-3 text-center">
               <div class="img mb-2">
-                <img src="https://i.pravatar.cc/70" width="70" class="rounded-circle" />
+                <img
+                  src="https://res.cloudinary.com/dfrcck8j7/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1636092044/making-marketing/PRODUCTOS/KACHELA/logo_wlukty.jpg"
+                  width="70" class="rounded-circle" />
               </div>
-              <h5 class="mb-0">Empresa 2</h5>
+              <h5 class="mb-0">Káchela</h5>
               <small>Productos</small>
               <div class="mt-4 d-flex justify-content-around">
                 <button class="btn btn-outline-dark text-uppercase">
@@ -440,6 +446,43 @@
     </div>
   </main>
 
+  <!-- lista de modales -->
+  <!-- 1. modal pupuseria chedraui -->
+  <div class="modal fade" id="modalPupuseriaChedraui" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content rounded-0">
+        <div class="modal-body bg-4">
+          <div class="d-flex main-content">
+            <div class="bg-image promo-img mr-2 d-none d-md-block"
+              style="background-image: url('https://res.cloudinary.com/dfrcck8j7/image/upload/v1636092047/making-marketing/PRODUCTOS/PUPUSERIA%20CHEDRAUI/producto-2_yd96id.jpg');">
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column">
+              <div class="text-center">
+                <h3>Pupusería Chedraui</h3>
+                <p>Es una pupusería con concepto fresco, juvenil e innovador. Elaboran pupusas con una fusión de
+                  ingredientes de la cocina libanesa y tradicional y salir de la zona de confort con nuevos sabores. Su
+                  especialidad son: pupusas y la chedraui, con sabores picantes.</p>
+              </div>
+
+              <!-- cupon -->
+              <div class="coupon">
+                CODIGO-CUPON
+              </div>
+
+              <a href="" class="btn py-1 btn-primary">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <!-- footer -->
   <div style="height: 150px; overflow: hidden">
     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
@@ -464,11 +507,14 @@
 
       <div class="text-white">
         <a style="text-decoration: none; color: white"
-        href="https://www.facebook.com/Virtual-Marketing-Fair-105130808634835/"><i class="fab fa-facebook"></i></a>
-      <a style="text-decoration: none; color: white" href="https://www.instagram.com/mmklamatias/"><i class="fab fa-instagram"></i></a>
+          href="https://www.facebook.com/Virtual-Marketing-Fair-105130808634835/"><i class="fab fa-facebook"></i></a>
+        <a style="text-decoration: none; color: white" href="https://www.instagram.com/mmklamatias/"><i
+            class="fab fa-instagram"></i></a>
       </div>
     </footer>
   </div>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
